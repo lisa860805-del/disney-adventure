@@ -18,7 +18,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex w-full max-w-xl gap-3">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row w-full max-w-xl gap-3">
       <input
         ref={inputRef}
         type="text"
@@ -34,7 +34,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
         disabled={loading}
         whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(201,168,76,0.45)" }}
         whileTap={{ scale: 0.97 }}
-        className="shrink-0 rounded-full px-8 py-4 text-sm font-semibold tracking-widest text-[#0A1628] disabled:opacity-60 transition-all duration-200"
+        className="w-full sm:w-auto rounded-full px-8 py-4 text-sm font-semibold tracking-widest text-[#0A1628] disabled:opacity-60 transition-all duration-200"
         style={{
           background: "linear-gradient(135deg, #F0DFA0 0%, #C9A84C 50%, #A07828 100%)",
           fontFamily: "'Noto Sans TC', sans-serif",
