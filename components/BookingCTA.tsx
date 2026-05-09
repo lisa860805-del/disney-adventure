@@ -87,7 +87,7 @@ export default function BookingCTA() {
               letterSpacing: "0.06em",
             }}
           >
-            點此預訂迪士尼遊輪
+            點此預訂迪士尼郵輪
           </span>
         </span>
 

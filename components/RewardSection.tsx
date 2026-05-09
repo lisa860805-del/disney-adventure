@@ -291,7 +291,7 @@ export default function RewardSection() {
               color: "#FFFFFF",
             }}
           >
-            迪士尼遊輪
+            迪士尼郵輪
             <br />
             <span style={{ color: "#C9A84C", fontStyle: "italic" }}>
               船上消費額度回饋
@@ -336,7 +336,7 @@ export default function RewardSection() {
             className="text-xs tracking-[0.18em] uppercase"
             style={{ color: "rgba(255,255,255,0.3)", fontFamily: "'Noto Sans TC', sans-serif" }}
           >
-            遊輪金額（USD）
+            郵輪金額（USD）
           </span>
           <span
             className="text-xs tracking-[0.18em] uppercase"
