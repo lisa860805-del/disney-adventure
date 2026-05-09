@@ -6,6 +6,7 @@ import type { Room } from "@/types/room";
 import { findRoom } from "@/lib/roomUtils";
 import SearchBar from "./SearchBar";
 import RoomCard from "./RoomCard";
+import BookingCTA from "./BookingCTA";
 
 type SearchState = "idle" | "found" | "notfound";
 
@@ -64,7 +65,7 @@ export default function SearchPage() {
         />
 
         {/* Top logo bar */}
-        <div className="relative z-10 flex justify-center pt-10 pb-0">
+        <div className="relative z-10 flex justify-center pt-20 pb-0">
           <div className="flex items-center gap-3">
             <div
               className="w-px h-5"
@@ -184,6 +185,7 @@ export default function SearchPage() {
               transition={{ duration: 0.3 }}
             >
               <RoomCard room={result} />
+              <BookingCTA />
             </motion.div>
           )}
 
