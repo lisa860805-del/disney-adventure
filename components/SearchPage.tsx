@@ -7,6 +7,7 @@ import { findRoom } from "@/lib/roomUtils";
 import SearchBar from "./SearchBar";
 import RoomCard from "./RoomCard";
 import BookingCTA from "./BookingCTA";
+import RewardSection from "./RewardSection";
 
 type SearchState = "idle" | "found" | "notfound";
 
@@ -220,6 +221,9 @@ export default function SearchPage() {
           )}
         </AnimatePresence>
       </main>
+
+      {/* ── REWARD SECTION ─────────────────────────────────────── */}
+      <RewardSection />
 
       {/* ── FOOTER ─────────────────────────────────────────────── */}
       <footer
